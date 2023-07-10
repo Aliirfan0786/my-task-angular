@@ -12,11 +12,11 @@ export class ApiService {
   constructor(private http : HttpClient) { }
   
   postUser(data:any){
-    return this.http.post<any>("http://localhost:3000/firstname",data)
+    return this.http.post<any>("https://future-tech.onrender.com/api/admin",data)
   }
-  getUser(){
-    return this.http.get<datamodel[]>("http://localhost:3000/firstname");
-  }
+  // getUser(){
+  //   return this.http.get<datamodel[]>("http://localhost:3000/firstname");
+  // }
 //   getEmploye(data:any){
 //     return this.http.post<any>("http://localhost:3000/posts",data)
 //     .pipe(map((res:any)=>{

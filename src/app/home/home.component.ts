@@ -25,6 +25,7 @@ export class HomeComponent  implements OnInit {
 
   
   formbuilder: any;
+  window: any;
   
    
   
@@ -60,9 +61,9 @@ ngOnit(): void {
   lastname: new FormControl("",[Validators.required,Validators.minLength(3),
     Validators.pattern("[a-zA-Z].*")]),
   email: new FormControl("",[Validators.required,Validators.email]),
-  mobile: new FormControl("",[Validators.required,Validators.minLength(10),
+  contact: new FormControl("",[Validators.required,Validators.minLength(10),
   Validators.maxLength(10),Validators.pattern("[0-9].*")]),
-  Gender: new FormControl("",Validators.required),
+  gender: new FormControl("",Validators.required),
   //state
   password: new FormControl("",[Validators.required,Validators.minLength(6),Validators.maxLength(15),]),
   // rpwd: new FormControl(""),
@@ -81,8 +82,12 @@ ngOnit(): void {
         this.registerForm.reset();
       },
       error:()=>{
-        alert("Something Went Wrong!")
+        // alert("Something Went Wrong!")
+        Swal.fire('error','something went wrong','error')
+        
       }
+      
+      
     })
   }
  }
@@ -110,14 +115,14 @@ ngOnit(): void {
   return this.registerForm.get("email")as FormControl;
  }
  get mobile(): FormControl{
-  return this.registerForm.get("mobile")as FormControl;
+  return this.registerForm.get("contact")as FormControl;
  }
- get Gender(): FormControl{
-  return this.registerForm.get("Gender")as FormControl;
+ get gender(): FormControl{
+  return this.registerForm.get("gender")as FormControl;
  }
  //State
  
- get pwd(): FormControl{
+ get password(): FormControl{
   return this.registerForm.get("password")as FormControl;
  }
 //  get rpwd(): FormControl{

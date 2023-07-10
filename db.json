@@ -1,206 +1,274 @@
 {
-  "firstname": [
-    {},
+  "admin": [
     {
+      "firstname": "fahad",
+      "lastname": "aman",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "0790582046",
+      "gender": "m",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "firstname": "fahad",
+      "lastname": "aman",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "0790582046",
+      "gender": "m",
+      "password": "123456",
       "id": 2
-    },
-    {
-      "firstname": "fahad",
-      "lastname": "aman",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "m",
-      "pwd": "123456",
-      "id": 3
-    },
-    {
-      "firstname": "fahad",
-      "lastname": "aman",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "m",
-      "pwd": "123456",
-      "id": 4
     },
     {
       "firstname": "irfan",
       "lastname": "ali",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "m",
-      "pwd": "123456dd",
-      "id": 5
+      "contact": "0790582046",
+      "gender": "m",
+      "password": "123456dd",
+      "id": 3
     },
     {
       "firstname": "irfandd",
       "lastname": "ali",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "m",
-      "pwd": "123456dd",
-      "id": 6
+      "contact": "0790582046",
+      "gender": "m",
+      "password": "123456dd",
+      "id": 4
     },
     {
       "firstname": "ffdfd",
       "lastname": "ttdtd",
       "email": "ft@1234",
-      "mobile": "6666666666",
-      "Gender": "m",
-      "pwd": "123456",
-      "id": 7
+      "contact": "6666666666",
+      "gender": "m",
+      "password": "123456",
+      "id": 5
     },
     {
       "firstname": "irfan",
       "lastname": "ali",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "7905820463",
-      "Gender": "m",
-      "pwd": "sgdsfgsfgs",
-      "id": 8
+      "contact": "7905820463",
+      "gender": "m",
+      "password": "sgdsfgsfgs",
+      "id": 6
     },
     {
       "firstname": "Asd",
       "lastname": "edfd",
       "email": "dfd@123",
-      "mobile": "1234567889",
-      "Gender": "m",
-      "pwd": "sssssss",
-      "id": 9
+      "contact": "1234567889",
+      "gender": "m",
+      "password": "sssssss",
+      "id": 7
     },
     {
       "firstname": "rahul",
       "lastname": "kunar",
       "email": "ffd@123",
-      "mobile": "0790582046",
-      "Gender": "m",
-      "pwd": "djdjdjd",
-      "id": 10
+      "contact": "0790582046",
+      "gender": "m",
+      "password": "djdjdjd",
+      "id": 8
     },
     {
       "firstname": "fahad",
       "lastname": "aman",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582044",
-      "Gender": "m",
-      "pwd": "12345678",
+      "contact": "0790582044",
+      "gender": "m",
+      "password": "12345678",
+      "id": 9
+    },
+    {
+      "firstname": "irfan",
+      "lastname": "ali",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "7905820444",
+      "gender": "m",
+      "password": "1234567",
+      "id": 10
+    },
+    {
+      "firstname": "irfan",
+      "lastname": "ali",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "7905820463",
+      "gender": "m",
+      "password": "123456789",
       "id": 11
-    },
-    {
-      "firstname": "irfan",
-      "lastname": "ali",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "7905820444",
-      "Gender": "m",
-      "pwd": "1234567",
-      "id": 12
-    },
-    {
-      "firstname": "irfan",
-      "lastname": "ali",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "7905820463",
-      "Gender": "m",
-      "pwd": "123456789",
-      "id": 13
     },
     {
       "firstname": "sdsf",
       "lastname": "dfd",
       "email": "sfsff@12",
-      "mobile": "1233455666",
-      "Gender": "m",
-      "pwd": "12234354",
-      "id": 14
+      "contact": "1233455666",
+      "gender": "m",
+      "password": "12234354",
+      "id": 12
     },
     {
       "firstname": "afsa",
       "lastname": "khan",
       "email": "sfsff@12",
-      "mobile": "0123345566",
-      "Gender": "male",
-      "pwd": "4444444",
-      "id": 15
+      "contact": "0123345566",
+      "gender": "male",
+      "password": "4444444",
+      "id": 13
     },
     {
       "firstname": "fahad",
       "lastname": "aman",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "male",
+      "contact": "0790582046",
+      "gender": "male",
       "password": "1234354",
+      "id": 14
+    },
+    {
+      "firstname": "fahad",
+      "lastname": "aman",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "0790582046",
+      "gender": "male",
+      "password": "1313232",
+      "id": 15
+    },
+    {
+      "firstname": "saif",
+      "lastname": "ahmed",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "0790582046",
+      "gender": "male",
+      "password": "1234567",
       "id": 16
     },
     {
       "firstname": "fahad",
       "lastname": "aman",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "male",
-      "password": "1313232",
+      "contact": "0790582046",
+      "gender": "female",
+      "password": "11234567",
       "id": 17
-    },
-    {
-      "firstname": "saif",
-      "lastname": "ahmed",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "male",
-      "password": "1234567",
-      "id": 18
     },
     {
       "firstname": "fahad",
       "lastname": "aman",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "female",
-      "password": "11234567",
+      "contact": "0790582046",
+      "gender": "male",
+      "password": "123456",
+      "id": 18
+    },
+    {
+      "firstname": "sdsf",
+      "lastname": "dfd",
+      "email": "sfsff@12",
+      "contact": "0123345566",
+      "gender": "male",
+      "password": "123456",
       "id": 19
     },
     {
       "firstname": "fahad",
       "lastname": "aman",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "male",
-      "password": "123456",
-      "id": 20
-    },
-    {
-      "firstname": "sdsf",
-      "lastname": "dfd",
-      "email": "sfsff@12",
-      "mobile": "0123345566",
-      "Gender": "male",
-      "password": "123456",
-      "id": 21
-    },
-    {
-      "firstname": "fahad",
-      "lastname": "aman",
-      "email": "fahad.aman7905@gmail.com",
-      "mobile": "0790582046",
-      "Gender": "male",
+      "contact": "0790582046",
+      "gender": "male",
       "password": "ddddddd",
-      "id": 22
+      "id": 20
     },
     {
       "firstname": "irfan",
       "lastname": "ali",
       "email": "fahad.aman7905@gmail.com",
-      "mobile": "790582046d",
-      "Gender": "female",
+      "contact": "790582046d",
+      "gender": "female",
       "password": "123456",
-      "id": 23
+      "id": 21
     },
     {
       "firstname": "sajid",
       "lastname": "siddiqui",
       "email": "sggsfQ@we111111",
-      "mobile": "1111111111",
-      "Gender": "female",
+      "contact": "1111111111",
+      "gender": "female",
       "password": "ewhrgwhr",
+      "id": 22
+    },
+    {
+      "firstname": "rohit",
+      "lastname": "seery",
+      "email": "1244@123",
+      "contact": "0790582046",
+      "gender": "female",
+      "password": "1234567",
+      "id": 23
+    },
+    {
+      "firstname": "kaalu",
+      "lastname": "kaliya",
+      "email": "fsfd@4567",
+      "contact": "5555555555",
+      "gender": "male",
+      "password": "7766554433",
       "id": 24
+    },
+    {
+      "firstname": "prabhutva ",
+      "lastname": "srivastava",
+      "email": "bittu2nov@gnail.com",
+      "contact": "7905953170",
+      "gender": "male",
+      "password": "123455",
+      "id": 25
+    },
+    {
+      "firstname": "fahad",
+      "lastname": "aman",
+      "email": "fahad.aman7905@gmail.com",
+      "contact": "0790582046",
+      "gender": "male",
+      "password": "43553535",
+      "id": 26
+    },
+    {
+      "firstname": "virat",
+      "lastname": "kohli",
+      "email": "dsda@123",
+      "contact": "7667676676",
+      "gender": "male",
+      "password": "ereretrte",
+      "id": 27
+    },
+    {
+      "firstname": "wws",
+      "lastname": "swss",
+      "email": "ss@as1",
+      "contact": "1244444444",
+      "gender": "male",
+      "password": "34rr324",
+      "id": 28
+    },
+    {
+      "firstname": "dsdsd",
+      "lastname": "dsdsds",
+      "email": "sff@1223",
+      "contact": "3333333344",
+      "gender": "female",
+      "password": "123456",
+      "id": 29
+    },
+    {
+      "firstname": "dsdsd",
+      "lastname": "dsdsds",
+      "email": "sff@1223",
+      "contact": "0333333334",
+      "gender": "male",
+      "password": "123456",
+      "id": 30
     }
   ],
   "comments": [

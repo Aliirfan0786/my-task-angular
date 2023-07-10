@@ -14,19 +14,19 @@ export class AppComponent implements OnInit {
   constructor(private api : ApiService){}
 
 ngOnInit(): void{
-  this.getAllUsers();
-}
-  getAllUsers(){
-    this.api.getUser()
-    .subscribe({
-      next : (res)=>{
-        console.log("response", res);
+//   this.getAllUsers();
+// }
+//   getAllUsers(){
+//     this.api.getUser()
+//     .subscribe({
+//       next : (res)=>{
+//         console.log("response", res);
         
-      },
-      error:(_err)=>{
-        alert("error while fetching the records")
-      }
-    })
+//       },
+//       error:(_err)=>{
+//         alert("error while fetching the records")
+//       }
+//     })
 
   }
 }

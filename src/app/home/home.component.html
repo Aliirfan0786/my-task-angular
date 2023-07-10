@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-primary">
   <div class="container-fluid">
-    <h1 style="color: aliceblue;">Users List</h1>
+    <h1 style="color: aliceblue; ">Users List</h1>
     <div class="d-flex">
       <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" registerForm class="btn btn-success">add User</button>
     </div>
@@ -8,37 +8,7 @@
   </div>
 </nav>
 
-<table class="table mt-3">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">firstname</th>
-      <th scope="col">lastname</th>
-      <th scope="col">email</th>
-      <th scope="col">mobile</th>
-      <th scope="col">Gender</th>
-      
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of data">
-      <td>{{item.firstname}}</td>
-      <td>{{item.lastname}}</td>
-      <td>{{item.email}}</td>
-      <td>{{item.mobile}}</td>
-      <td>{{item.Gender}}</td>
-      <td>{{item.pwd}}</td>
-      <td>
-        <button class="btn btn-info">Edit</button>
-        <button class="btn btn-danger mx-3">Delete</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
+<app-table-data></app-table-data>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -108,7 +78,7 @@
           <div class="row">
               <div class="col mb-3">
                   <label for="mobile" class="form-lable"> Mobile Number</label>
-                  <input type="text" class="form-control" id="mobile" formControlName="mobile">
+                  <input type="text" class="form-control" id="mobile" formControlName="contact">
                   <div class="form-text text-danger" *ngIf="mobile.errors ?.['required'] &&
                   ( mobile.touched ||mobile.dirty)">
                       Mobile Number is required.
@@ -129,15 +99,15 @@
               <div class="col ps-3 mb-3">
                   <div class="m-1">gender</div>
                   <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" value="male" id="male" formControlName="Gender">
+                      <input type="radio" class="form-check-input" value="male" id="male" formControlName="gender">
               
                       <label class="form-check-label" for="male">Male</label>
                   </div>
                   <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" value="female" id="female" formControlName="Gender">
+                      <input type="radio" class="form-check-input" value="female" id="female" formControlName="gender">
                       <label class="form-check-label" for="female">Female</label>
                   </div>
-                  <div class="form-text text-danger" *ngIf="Gender.errors ?.['required'] && 
+                  <div class="form-text text-danger" *ngIf="gender.errors ?.['required'] && 
                   ( mobile.touched ||mobile.dirty)">
                       
                       Gender is required.
@@ -155,15 +125,15 @@
           <div class="row">
               <div class="col mb-3">
                   <label for="password" class="form-label">password</label>
-                  <input type="password" class="form-control" id="pwd" formControlName="password">
-                  <div class="form-text text-danger" *ngIf="pwd.errors ?.['minlength'] || pwd.errors?.['maxlength']&&
-                  ( pwd.touched || pwd.dirty)">
+                  <input type="password" class="form-control" id="password" formControlName="password">
+                  <div class="form-text text-danger" *ngIf="password.errors ?.['minlength'] || password.errors?.['maxlength']&&
+                  ( password.touched || password.dirty)">
                      Password should be Atleast 6 to 15 characters.
                  </div>
               </div>
               <!-- <div class="col mb-3">
-                  <label for="rpwd" class="form-label"> Repeat Password</label>
-                  <input type="password" class="form-control" id="rpwd" formControlName="rpwd">
+                  <label for="rpassword" class="form-label"> Repeat Password</label>
+                  <input type="password" class="form-control" id="rpassword" formControlName="rpassword">
                   <div class="form-text text-danger" [ngStyle]="{'display':repeatPass}">
                       Repeat pass is Invalid.
       
@@ -181,8 +151,8 @@
       </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+       
       </div>
     </div>
   </div>

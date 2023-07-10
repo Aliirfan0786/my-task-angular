@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApiComponent } from './shared/api/api.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TableDataComponent } from './table-data/table-data.component';
 
 
 
@@ -23,6 +24,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SignupComponent,
     HomeComponent,
     ApiComponent,
+    TableDataComponent,
     
   ],
   imports: [
