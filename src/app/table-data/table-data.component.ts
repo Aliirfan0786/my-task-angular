@@ -5,12 +5,13 @@ interface DataItem {
 gender: any;
 password: any;
 contact: any;
-firstname: any;
-lastname: any;
+firstName: any;
+lastName: any;
 email: any;
   
   id: number;
   name: string;
+  
   
 }
 
@@ -21,7 +22,7 @@ email: any;
 })
 export class TableDataComponent {
 
-  data: DataItem[] | undefined;
+  data: DataItem[] | any;
 
   constructor(private http: HttpClient) { }
 
@@ -34,6 +35,9 @@ export class TableDataComponent {
       .subscribe(data => {
         this.data = data;
       });
+      
   }
+ 
 
 }
+

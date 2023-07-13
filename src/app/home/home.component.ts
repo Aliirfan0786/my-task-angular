@@ -3,7 +3,7 @@ import { FormControl, FormGroup,Validators,FormBuilder } from '@angular/forms';
 
 import Swal from 'sweetalert2';
 import { ApiService } from '../shared/api.service';
-import { datamodel } from './model';
+
 
 
 
@@ -21,11 +21,15 @@ import { datamodel } from './model';
 
 
 export class HomeComponent  implements OnInit {
-  data:undefined|datamodel[]
+  data:any
 
+  
   
   formbuilder: any;
   window: any;
+closeModal: any;
+  
+
   
    
   
@@ -36,8 +40,9 @@ export class HomeComponent  implements OnInit {
   
   constructor(private api : ApiService) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
+
+  
 ngOnit(): void {
   
   
@@ -45,16 +50,7 @@ ngOnit(): void {
 }
  
 
-// alertWithSuccess(){
 
-//   if(this.pwd.valid){
-//     Swal.fire('Thank you', 'you submitted successfully','success')
-//   }
-
-// }
-// employeModelobj:employeModal = new employeModal();
-
-//
  registerForm = new FormGroup({
   firstname: new FormControl("",[Validators.required,Validators.minLength(3),
   Validators.pattern("[a-zA-Z].*")]),
@@ -66,7 +62,7 @@ ngOnit(): void {
   gender: new FormControl("",Validators.required),
   //state
   password: new FormControl("",[Validators.required,Validators.minLength(6),Validators.maxLength(15),]),
-  // rpwd: new FormControl(""),
+  
 
 
 
@@ -74,36 +70,47 @@ ngOnit(): void {
  
 
  alertWithSuccess(){
+  
   if(this.registerForm.valid){
     this.api.postUser(this.registerForm.value)
     .subscribe({
       next:(_response :any)=> {
         Swal.fire('Thank you', 'you submitted successfully','success')
+        let ref = document.getElementById('cancel')
+        ref?.click();
         this.registerForm.reset();
+        
+        
+        
+        
+        
+       
+        
       },
       error:()=>{
         // alert("Something Went Wrong!")
-        Swal.fire('error','something went wrong','error')
+        Swal.fire('error','something went wrong','error')  
+        let ref = document.getElementById('cancel')
+        ref?.click();
         
-      }
-      
-      
+      } 
     })
+    
   }
+  
+ 
+
  }
  
 
- 
-  
- 
-
  registerSubmitted(){
-  console.log(this.registerForm.value)
-
+  
+    console.log(this.registerForm.value)
   
 
 
  }  
+  
   
  get firstname(): FormControl{
   return this.registerForm.get("firstname")as FormControl;
@@ -125,8 +132,9 @@ ngOnit(): void {
  get password(): FormControl{
   return this.registerForm.get("password")as FormControl;
  }
-//  get rpwd(): FormControl{
-//   return this.registerForm.get("rpwd")as FormControl;
-//  }
+
 
 }
+
+
+
